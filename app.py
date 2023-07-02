@@ -127,10 +127,8 @@ with st.sidebar:
     st.caption("""
     - 双击页面可直接定位输入栏
     - Ctrl + Enter 可快捷提交问题
+    - 来自珂仔的生活实录，如有需求请联系kezai
     """)
-    st.markdown('<a href="https://github.com/PierXuY/ChatGPT-Assistant" target="_blank" rel="ChatGPT-Assistant">'
-                '<img src="https://badgen.net/badge/icon/GitHub?icon=github&amp;label=ChatGPT Assistant" alt="GitHub">'
-                '</a>', unsafe_allow_html=True)
 
 # 加载数据
 if "history" + current_chat not in st.session_state:
@@ -199,7 +197,7 @@ area_gpt_content = st.empty()
 area_error = st.empty()
 
 st.write("\n")
-st.header('ChatGPT Assistant')
+st.header('ChatGPT 助手')
 tap_input, tap_context, tap_model, tab_func = st.tabs(['💬 聊天', '🗒️ 预设', '⚙️ 模型', '🛠️ 功能'])
 
 with tap_context:
